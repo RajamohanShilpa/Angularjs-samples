@@ -1,0 +1,45 @@
+/*style.css*/
+ .gridStyle {
+    border: 1px solid rgb(212, 212, 212);
+    height: 300px;
+    float:left;
+}
+.select-items {
+    border:solid #ddd 1px;
+    display:inline-block;
+    float:left;
+    cursor:pointer;
+    margin:10px;
+}
+.row-color {
+    background-color: #be4c39 !important;
+}
+.row-selected-blue-green {
+    color:#fff;
+    background: -webkit-linear-gradient(left, #4472b9 50%, #4ca454 50%) !important;
+    background: linear-gradient(left, #4472b9 50%, #4ca454 50%) !important;
+    background: -moz-linear-gradient(left, #4472b9 50%, #4ca454 50%) !important;
+    background: -o-linear-gradient(left, #4472b9 50%, #4ca454 50%) !important;
+}
+/*transparent*/
+ .row-selected-blue {
+    color:#fff;
+    background: -webkit-linear-gradient(left, #4472b9 100%, #000000 0%) !important;
+    background: linear-gradient(left, #4472b9 100%, #000000 0%) !important;
+    background: -moz-linear-gradient(left, #4472b9 100%, #000000 0%) !important;
+    background: -o-linear-gradient(left, #4472b9 100%, #000000 0%) !important;
+}
+.row-selected-green {
+    color:#000;
+    background: -webkit-linear-gradient(left, #4ca454 100%, #000000 0%) !important;
+    background: linear-gradient(left, #4ca454 100%, #000000 0%) !important;
+    background: -moz-linear-gradient(left, #4ca454 100%, #000000 0%) !important;
+    background: -o-linear-gradient(left, #4ca454 100%, #000000 0%) !important;
+}
+.row-selected {
+    color:#fff;
+    background: -webkit-linear-gradient(left, transparent 100%, #000000 0%) !important;
+    background: linear-gradient(left, transparent 100%, #000000 0%) !important;
+    background: -moz-linear-gradient(left, transparent 100%, #000000 0%) !important;
+    background: -o-linear-gradient(left, transparent 100%, #000000 0%) !important;
+}

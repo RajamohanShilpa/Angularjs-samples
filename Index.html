@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
+<html lang="en-us" ng-app="calendarApp">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hello...</title>
+    <script type="text/javascript" src="/Scripts/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/Scripts/angularjs/angular.min.js"></script>
+    <script type="text/javascript" src="/Scripts/angularjs/ng-grid.min.js"></script>
+    <script type="text/javascript" src="/Scripts/moment/moment.js"></script>
+    <script type="text/javascript" src="/Scripts/angularjs/calendar.js"></script>
+    <script type="text/javascript" src="/Scripts/angularjs/ui-bootstrap.js"></script>
+    <script type="text/javascript" src="/Scripts/angularjs/fullcalendar/fullcalendar.js"></script>
+    <script type="text/javascript" src="/Scripts/angularjs/fullcalendar/gcal.js"></script>
+    <script type="text/javascript" src="/Scripts/underscore/underscore-min.js"></script>
+    <script type="text/javascript" src="/Scripts/app.js"></script>
+
+    <link rel="stylesheet" href="/css/angularjs/ng-grid.min.css" type="text/css" />
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="/css/fullcalendar/fullcalendar.css" type="text/css" />
+    <link rel="stylesheet" href="/css/main.css" type="text/css" />
+</head>
+
+<body ng-controller="calendarCtrl">
+    <form name="form1" class="form-horizontal">
+        <div class="col-md-12">
+            <div class="form-group">
+                <div ui-calendar="uiConfig.calendar" class="col-md-4 calendar" ng-model="eventSources" id="calendar"></div>
+                <div ng-grid="ngGridOptions" class="gridStyle col-md-8"></div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

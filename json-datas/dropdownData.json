@@ -1,0 +1,31 @@
+{
+    "dropdownData": [{
+        "id": 1,
+        "name": "R data",
+        "shortName": "R"
+    }, {
+        "id": 2,
+        "name": "M data",
+        "shortName": "M"
+    }, {
+        "id": 3,
+        "name": "P data",
+        "shortName": "P"
+    }],
+    "dropdownDataColor": [{
+        "id": 1,
+        "dropdownDataID": 1,
+        "dropdownDataShortName": "R",
+        "color": "row-selected-blue"
+    }, {
+        "id": 2,
+        "dropdownDataID": 2,
+        "dropdownDataShortName": "M",
+        "color": "row-selected-green"
+    }, {
+        "id": 3,
+        "dropdownDataID": 3,
+        "dropdownDataShortName": "P",
+        "color": "row-selected-blue-green"
+    }]
+}
