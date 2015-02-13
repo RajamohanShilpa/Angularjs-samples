@@ -1,0 +1,10 @@
+<div ng-app="angularProject.sampleProject.calendarApp">
+    <div ng-controller="calendarCtrl">
+        <div class="col-md-12">
+            <div class="form-group">
+                <div ui-calendar="uiConfig.calendar" class="col-md-4 calendar" ng-model="eventSources" id="calendar"></div>
+                <div ng-grid="ngGridOptions" class="gridStyle col-md-8"></div>
+            </div>
+        </div>
+    </div>
+</div>
