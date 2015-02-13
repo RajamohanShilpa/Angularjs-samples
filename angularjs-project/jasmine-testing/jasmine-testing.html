@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hello...</title>
+    <link href="/css/jasmine.css" rel="stylesheet" />
+    <script type="text/javascript" src="/Scripts/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/Scripts/requirejs/required.js"></script>
+    <script type="text/javascript" src="/Scripts/jasmine.js"></script>
+    <script type="text/javascript" src="/Scripts/jasmine-html.js"></script>
+    <script type="text/javascript" src="/Scripts/angularjs/angular.min.js"></script>
+    <script type="text/javascript" src="/Scripts/angularjs/angular-mocks.js"></script>
+    <script type="text/javascript" src="/angularjs-project/jasmine-testing/ng-scripts/ng-scripts.js"></script>
+    <script type="text/javascript" src="/angularjs-project/jasmine-testing/ng-tests/ng-tests.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var jasmineEnv = jasmine.getEnv();
+        jasmineEnv.addReporter(new jasmine.HtmlReporter());
+        jasmineEnv.execute();
+    </script>
+</body>
+
+</html>

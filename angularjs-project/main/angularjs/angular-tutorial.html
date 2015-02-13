@@ -1,0 +1,97 @@
+<div ng-app="angularProject.main.angular-tutorial">
+    <div ng-controller="angularTutorialCtrl">
+        <div class="container">
+            <h2 class="tutorial-header">{{header}}</h2>
+            <div class="tutorial-content">
+                <div class="form-group">
+                    <div class="row col-md-12 col-lg-12">
+                        <div class="col-md-3 col-lg-3 bs-docs-sidebar">
+                            <ul class="nav nav-list bs-docs-sidenav affix" scroll-spy>
+                                <li class="active"><a href="#" data-href="abind">angular.bind</a>
+                                </li>
+                                <li><a href="#" data-href="abootstrap">angular.bootstrap</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-9 col-lg-9">
+                            <sction id="abind">
+                                <div ng-app="angularProject.main.angular-tutorial.angular-bind">
+                                    <div ng-controller="angularProject.main.angular-tutorial.angularBindCtrl">
+                                        <div class="page-header">
+                                            <h2>angular.bind</h2>
+                                        </div>
+                                        <p>{{content}}</p>
+                                        <h3>Usage</h3>
+                                        <span class="highlighter">angular.bind(self, fn, args);</span>
+                                        <h3>Arguments</h3>
+                                        <div class="content-table">
+                                            <div class="row con-headers">
+                                                <div class="col-lg-3 col-md-3">Param</div>
+                                                <div class="col-lg-3 col-md-3">Type</div>
+                                                <div class="col-lg-6 col-md-6">Details</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-3">self</div>
+                                                <div class="col-lg-3 col-md-3">
+                                                    <span class="highlighter">Object</span>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">Context which fn should be evaluated in.</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-3">fn</div>
+                                                <div class="col-lg-3 col-md-3">
+                                                    <span class="highlighter green">function()</span>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6">Function to be bound.</div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-3">args</div>
+                                                <div class="col-lg-3 col-md-3">
+                                                    <span class="highlighter">*</span>
+                                                </div>
+                                                <div class="col-lg-3 col-md-3">Optional arguments to be prebound to the fn function call.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </sction>
+                            <sction id="abootstrap">
+                                <div ng-app="angularProject.main.angular-tutorial.angular-bootstrap">
+                                    <div ng-controller="angularProject.main.angular-tutorial.angularBootstrapCtrl">
+                                        <div class="page-header">
+                                            <h2>angular.bootstrap</h2>
+                                        </div>
+                                        <h3>Use this function to manually start up angular application.</h3>
+                                        <p>{{content}}</p>
+                                        <h3>Usage</h3>
+                                        <code><pre>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;div ng-controller="WelcomeController"&gt;
+  &#123;&#123;greeting&#125;&#125;
+&lt;/div&gt;
+
+&lt;script src="angular.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  var app = angular.module('demo', [])
+  .controller('WelcomeController', function($scope) {
+      $scope.greeting = 'Welcome!';
+  });
+  angular.bootstrap(document, ['demo']);
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</code>
+                                    </div>
+                                </div>
+                            </sction>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
