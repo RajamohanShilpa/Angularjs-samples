@@ -1,0 +1,13 @@
+
+<div ng-app="angularProject.sampleProject.ngAnimation">
+    <div ng-controller="ngAnimationCtrl">
+        
+        <div class="col-md-10">
+            <input type="text" ng-model="search" />
+            <ul class="nav nav-pills nav-stacked">
+                <li ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}" ng-repeat="list in lists | filter:{'name':search}">{{list.name}}</li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
